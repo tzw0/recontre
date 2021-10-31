@@ -4,11 +4,142 @@
   width: 100%;
   margin: 0;
   position: relative;
+  height: 100%;
 
   .page{
+    scroll-snap-align: start;
+
     .row{
       .col{
-        margin: 200px;
+        z-index: 70;
+        position: relative;
+
+        .img-affinity{
+          // display: none;
+          margin-top: 20px;
+          position: relative;
+          height: calc(55vw - 80px);
+          width: calc(80vw - 80px);
+
+          .img{
+            background-image: url(./assets/AffinityDiagram.png);
+            background-size: contain;
+          }
+        }
+        
+        .browse-img{
+          margin: 20px 0;
+          position: relative;
+          width: 150px;
+          height: 150px;
+          align-self: center;
+          display: flex;
+          
+          .img{
+            background-image: url(./assets/browse.png);
+            background-size: contain;
+          }
+        }
+
+        .discover-img{
+          margin: 20px 0;
+          position: relative;
+          width: 150px;
+          height: 150px;
+          align-self: center;
+          display: flex;
+          
+          .img{
+            background-image: url(./assets/discover.png);
+            background-size: contain;
+          }
+        }
+
+        .inform-img{
+          margin: 20px 0;
+          position: relative;
+          width: 150px;
+          height: 150px;
+          align-self: center;
+          display: flex;
+          
+          .img{
+            background-image: url(./assets/inform.png);
+            background-size: contain;
+          }
+        }
+
+        .p1-img{
+          margin: 20px 0;
+          position: relative;
+          width: 200px;
+          height: 200px;
+          align-self: center;
+          display: flex;
+          border-radius: 50%;
+          overflow: hidden;
+          border: 3px solid $primary-colour;
+
+          .img{
+            background-image: url(./assets/junetan.png);
+            background-size: contain;
+          }
+        }
+
+        .p2-img{
+          margin: 20px 0;
+          position: relative;
+          width: 200px;
+          height: 200px;
+          align-self: center;
+          display: flex;
+          border-radius: 50%;
+          overflow: hidden;
+          border: 3px solid $primary-colour;
+
+          .img{
+            background-image: url(./assets/maytay.png);
+            background-size: contain;
+          }
+        }
+
+        .p3-img{
+          margin: 20px 0;
+          position: relative;
+          width: 200px;
+          height: 200px;
+          align-self: center;
+          display: flex;
+          border-radius: 50%;
+          overflow: hidden;
+          border: 3px solid $primary-colour;
+
+          .img{
+            background-image: url(./assets/benjamin.png);
+            background-size: contain;
+          }
+        }
+      }
+      
+      .cover-img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-image: url(./assets/cover2.png);
+        height: calc(100% + 100px);
+        min-width: 55%;
+        background-size: cover;
+
+        .overlay{
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          z-index: 30;
+          background: linear-gradient(90deg, white, 20%, #ffffff22);
+        }
       }
     }
   }
