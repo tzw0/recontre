@@ -1,5 +1,15 @@
 @import "./global.scss";
 
 .App {
-  text-align: center;
+  width: 100%;
+  margin: 0;
+  position: relative;
+
+  .page{
+    .row{
+      .col{
+        margin: 200px;
+      }
+    }
+  }
 }
