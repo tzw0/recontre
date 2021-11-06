@@ -10,7 +10,7 @@ export default function Topbar() {
                         ↩&nbsp;&nbsp;&nbsp;CS3240 20/21 S1 G17</a>
                 </div>
                 <div className="row">
-                    <a href="#interactive-prototype">Interactive Prototype</a>
+                    <a href="#pg10-interactive">Interactive Prototype</a>
                     <div className="vert-sep"></div>
                     <a href="#presentation">Final Presentation</a>
                     <div className="vert-sep"></div>
