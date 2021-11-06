@@ -500,7 +500,7 @@ function App() {
           </div>
 
           <div>
-            <h2>Taught by:</h2>
+            <h2>Lecturer:</h2>
             Associate Professor, <br /> Zhao Shendong <br />
             <br />
             <h2>Teaching Assistant: </h2>
