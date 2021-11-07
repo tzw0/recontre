@@ -352,6 +352,8 @@
         .final-presentation{
           height: calc((80vw - 80px) / 16 * 9);
           width: calc(80vw - 80px);
+          max-height: 500px;
+          max-width: 900px;
         }
       }
       
