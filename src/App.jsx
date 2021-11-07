@@ -8,6 +8,11 @@ import CreateIcon from '@mui/icons-material/Create';
 import G0 from './assets/G0.pdf'
 import G1 from './assets/G1.pdf'
 import G2 from './assets/G2.pdf'
+import HistoryIcon from '@mui/icons-material/History';
+import ListAltIcon from '@mui/icons-material/ListAlt';
+import WarningAmberIcon from '@mui/icons-material/WarningAmber';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import GavelIcon from '@mui/icons-material/Gavel';
 
 function App() {
   return (
@@ -460,9 +465,12 @@ function App() {
           </div>
           <div className="col m40px w33">
             <h3>Decide</h3>
-            {/* <div className="img-u3">
+            <div className="img-u3">
               <div className="img flat"></div>
-            </div> */}
+            </div>
+            <br />
+
+            The user can gather more information about each locations by clicking "find out more" from discover tab, or by clicking into any location from 'food' or 'attraction' tabs. Based on weather, transport option and other details, the user can decide his outing plan.
           </div>
         </div>
 
@@ -470,14 +478,230 @@ function App() {
         <div className="clear"></div>
       </div>
 
-      <div className="page collapse" id="pg10-interactive">
+      <div className="page collapse" id="pg10-usability-testing">
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w100">
+            <h2>Usability Testing</h2>
+            <span>
+              Our group performed usability testing with 3 participants that fit our user groups to further sharpen and improve our prototype. We referenced the <a className="true" href="https://www.userfocus.co.uk/articles/testplan.html" target="_blank" rel="noreferrer">
+                Usability Test Plan Toolkit</a> when designing the test. Read our full documentation here: <a className="true" href="https://docs.google.com/document/d/1u7SFSA3U0r9IwlFA-3yIBUL62k8-xIF799wWQ3PChks/" target="_blank" rel="noreferrer">Evaluation Report ↪</a>
+            </span>
+          </div>
+        </div>
+        <div className="clear"></div>
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w33">
+            <h3>Test Task 1</h3>
+            <p> <div className="icon"> <PanoramaOutlinedIcon fontSize="medium" /> &nbsp; Scenario </div>
+              Navigate through the homepage of Recontre to check out the different categories (Recommended, Food and Attractions) available. After which browse through the list of food choices as well as attractions.
+            </p>
+          </div>
+          <div className="col m40px w33">
+            <h3>Test Task 2</h3>
+            <p> <div className="icon"> <PanoramaOutlinedIcon fontSize="medium" /> &nbsp; Scenario </div>
+              Navigate to a specific food place and attraction in Recontre. Browse through the details provided in the application and make a decision whether to plan for the next outing to the food place or attraction based on the information provided.
+            </p>
+          </div>
+          <div className="col m40px w33">
+            <h3>Test Task 3</h3>
+            <p> <div className="icon"> <PanoramaOutlinedIcon fontSize="medium" /> &nbsp; Scenario </div>
+              Navigate to the discovery page of Recontre and browse through the discovery page. Check on why the attraction or food place is recommended to you. Based on this information, choose whether you would want to plan for your next outing based on this location, save this location or to remove it from the discovery page.
+            </p>
+          </div>
+        </div>
+        <div className="clear"></div>
+        <div className="clear"></div>
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w33">
+            <p> <div className="icon"> <HelpOutlineIcon fontSize="medium" /> &nbsp; About </div>
+              This scenario was selected to gain insights on the layout of Recontre. Besides the layout, we would also want to learn from the participants if the buttons implemented looks clickable to the average user. Lastly, we would also want to receive feedback on the implementation of the filter feature in the Food and Attraction pages.
+            </p>
+          </div>
+          <div className="col m40px w33">
+            <p> <div className="icon"> <HelpOutlineIcon fontSize="medium" /> &nbsp; About </div>
+              We designed this scenario to gain insights on the detailed information provided for the participant in a specific food place and attraction. We will also find out whether the layout of the details displayed is pleasing for the participant. From this, we can gain insights as to which information the participant finds important and display them more promptly in Recontre.
+            </p>
+          </div>
+          <div className="col m40px w33">
+            <p> <div className="icon"> <HelpOutlineIcon fontSize="medium" /> &nbsp; About </div>
+              This scenario was designed for the participant to walk through our “Discover” page which is a critical task of Recontre. From this scenario, we aim to gain insights of the layout of the page as well as whether the information provided is sufficient for the participant. Also, we would want to see whether the “match percentage” feature of the Discover page provides the participant with enough relevant information.
+            </p>
+          </div>
+        </div>
+        <div className="clear"></div>
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w100">
+            <h3>Improvements from User Feedback</h3>
+            <h4> Improvement 1 </h4>
+            <p> <div className="icon"> <WarningAmberIcon fontSize="medium" /> &nbsp; Problem </div>
+              The details page for food and activities are too cluttered. Some important information are missing as well.
+            </p>
+          </div>
+        </div>
+        <div className="clear"></div>
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w33">
+            <p> <div className="icon"> <HistoryIcon fontSize="medium" /> &nbsp; Before </div>
+            </p>
+            <div className="img-i1b4">
+              <div className="img flat">
+
+              </div>
+            </div>
+          </div>
+          <div className="col m40px w33">
+            <p> <div className="icon"> <ListAltIcon fontSize="medium" /> &nbsp; Changes </div>
+              <ul>
+                <li>Removed unnecessary information such as the next day’s weather and crowd level. </li>
+                <li>Included contact information for food page</li>
+                <li>Changed the font size of headings </li>
+              </ul>
+            </p>
+          </div>
+          <div className="col m40px w33">
+            <p> <div className="icon"> <ArrowForwardIcon fontSize="medium" /> &nbsp; After </div>
+            </p>
+            <div className="img-i1af">
+              <div className="img flat">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="clear"></div>
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w100">
+            <p> <div className="icon"> <GavelIcon fontSize="medium" /> &nbsp; Justification </div>
+              Too much information on the page will cause an information overload to the users. Therefore, we removed the clutter and made it more condensed.
+            </p>
+          </div>
+        </div>
+        <div className="clear"></div>
+
+
+
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w100">
+            <h4> Improvement 2 </h4>
+            <p> <div className="icon"> <WarningAmberIcon fontSize="medium" /> &nbsp; Problem </div>
+              “Never” button on the Discover page is too extreme and users would stray away from using the button.
+            </p>
+          </div>
+        </div>
+        <div className="clear"></div>
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w33">
+            <p> <div className="icon"> <HistoryIcon fontSize="medium" /> &nbsp; Before </div>
+            </p>
+            <div className="img-i2b4">
+              <div className="img flat">
+              </div>
+            </div>
+          </div>
+          <div className="col m40px w33">
+            <p> <div className="icon"> <ListAltIcon fontSize="medium" /> &nbsp; Changes </div>
+              <ul>
+                <li>Removed “Never” button.</li>
+              </ul>
+            </p>
+          </div>
+          <div className="col m40px w33">
+            <p> <div className="icon"> <ArrowForwardIcon fontSize="medium" /> &nbsp; After </div>
+            </p>
+            <div className="img-i2af">
+              <div className="img flat">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="clear"></div>
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w100">
+            <p> <div className="icon"> <GavelIcon fontSize="medium" /> &nbsp; Justification </div>
+              Users will scroll past activities or food options that they are not interested in. Therefore, the “Never” button is not needed.
+            </p>
+          </div>
+        </div>
+        <div className="clear"></div>
+
+
+
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w100">
+            <h4> Improvement 3 </h4>
+            <p> <div className="icon"> <WarningAmberIcon fontSize="medium" /> &nbsp; Problem </div>
+              “Match” feature in the Discover page is a welcomed feature and it adds a personal touch to the application.
+            </p>
+          </div>
+        </div>
+
+        <div className="clear"></div>
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w33">
+            <p> <div className="icon"> <HistoryIcon fontSize="medium" /> &nbsp; Before </div>
+            </p>
+            <div className="img-i3b4">
+              <div className="img flat">
+
+              </div>
+            </div>
+          </div>
+          <div className="col m40px w33">
+            <p> <div className="icon"> <ListAltIcon fontSize="medium" /> &nbsp; Changes </div>
+              <ul>
+                <li>Included a “Recommended by X friends” tailored for each user next to the “Match” feature</li>
+              </ul>
+            </p>
+          </div>
+          <div className="col m40px w33">
+            <p> <div className="icon"> <ArrowForwardIcon fontSize="medium" /> &nbsp; After </div>
+            </p>
+            <div className="img-i3af">
+              <div className="img flat">
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div className="clear"></div>
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w100">
+            <p> <div className="icon"> <GavelIcon fontSize="medium" /> &nbsp; Justification </div>
+              This will give users more information about the current food or activity before clicking into the “Match” feature to look at their friend’s reviews.
+            </p>
+          </div>
+        </div>
+        <div className="clear"></div>
+        <div className="clear"></div>
+      </div>
+
+      <div className="page collapse" id="interactive">
         <div className="row w80 no-vert-center">
           <div className="col m40px w100">
             <h2>Interactive Prototype</h2>
             Try out the application yourself with our interactive prototype!
             <br />
             <br />
-            <iframe title="Interactive prototype" className="interactive-prototype" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7aA1Cam8Nf46SYNsJYa1mC%2FG2-(Copy)%3Fnode-id%3D828%253A9484%26scaling%3Dscale-down%26page-id%3D828%253A9120%26starting-point-node-id%3D828%253A9484%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+            <iframe title="Interactive prototype" className="interactive-prototype" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FnG4jr7Qwj7efqjRmqmlppX%2FG2%3Fnode-id%3D924%253A15236%26scaling%3Dscale-down%26page-id%3D809%253A7253%26starting-point-node-id%3D924%253A15236" allowfullscreen={true}></iframe>
+          </div>
+        </div>
+        <div className="clear"></div>
+        <div className="clear"></div>
+      </div>
+
+      <div className="page collapse" id="presentation">
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w100">
+            <h2>Final Presentation</h2>
+            <br />
+            <iframe title="final-presentation" className="final-presentation"
+              src="https://www.youtube.com/embed/htV_oL5jda0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
           </div>
         </div>
       </div>
@@ -495,13 +719,13 @@ function App() {
             <a href={G0} target="_blank" rel="noreferrer">G0 Design Problem ↪</a>
             <a href={G1} target="_blank" rel="noreferrer">G1 User Research ↪</a>
             <a href={G2} target="_blank" rel="noreferrer">G2 Prototyping ↪</a>
-            <a href={G2} target="_blank" rel="noreferrer">G3 Evaluation ↪</a>
+            <a href="https://docs.google.com/document/d/1u7SFSA3U0r9IwlFA-3yIBUL62k8-xIF799wWQ3PChks/" target="_blank" rel="noreferrer">G3 Evaluation ↪</a>
             <br />
           </div>
 
           <div>
             <h2>Lecturer:</h2>
-            Associate Professor, <br /> Zhao Shendong <br />
+            <a href="https://www.comp.nus.edu.sg/cs/bio/zhaosd/" target="_blank" rel="noreferrer">Associate Professor, <br /> Zhao Shendong <br /></a>
             <br />
             <h2>Teaching Assistant: </h2>
             Rushagrid Kunthamas <br />

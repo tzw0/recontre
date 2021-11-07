@@ -229,7 +229,7 @@
         .img-u1{
           margin-top: 20px;
           position: relative;
-          height: 530px;
+          height: 533px;
           width: 270px;
           align-self: center;
 
@@ -253,14 +253,92 @@
         }
 
         .img-u3{
-          margin-top: 20px;
+          margin-top: 18px;
           position: relative;
-          height: 530px;
+          height: 533px;
           width: 270px;
           align-self: center;
 
           .img{
-            background-image: url(./assets/u1.gif);
+            background-image: url(./assets/u3.gif);
+            background-size: contain;
+          }
+        }
+
+        .img-i1b4{
+          margin-top: 18px;
+          position: relative;
+          height: 533px;
+          width: 270px;
+          align-self: center;
+
+          .img{
+            background-image: url(./assets/i1b4.png);
+            background-size: contain;
+          }
+        }
+
+        .img-i1af{
+          margin-top: 18px;
+          position: relative;
+          height: 533px;
+          width: 270px;
+          align-self: center;
+
+          .img{
+            background-image: url(./assets/i1af.png);
+            background-size: contain;
+          }
+        }
+
+        .img-i2b4{
+          margin-top: 18px;
+          position: relative;
+          height: 533px;
+          width: 270px;
+          align-self: center;
+
+          .img{
+            background-image: url(./assets/i2b4.png);
+            background-size: contain;
+          }
+        }
+
+        .img-i2af{
+          margin-top: 18px;
+          position: relative;
+          height: 533px;
+          width: 270px;
+          align-self: center;
+
+          .img{
+            background-image: url(./assets/i2af.png);
+            background-size: contain;
+          }
+        }
+
+        .img-i3b4{
+          margin-top: 18px;
+          position: relative;
+          height: 533px;
+          width: 270px;
+          align-self: center;
+
+          .img{
+            background-image: url(./assets/i3b4.png);
+            background-size: contain;
+          }
+        }
+
+        .img-i3af{
+          margin-top: 18px;
+          position: relative;
+          height: 533px;
+          width: 270px;
+          align-self: center;
+
+          .img{
+            background-image: url(./assets/i3af.png);
             background-size: contain;
           }
         }
@@ -268,6 +346,12 @@
         .interactive-prototype{
           height: 100vh;
           max-height: 1000px;
+          width: calc(80vw - 80px);
+        }
+
+        .final-presentation{
+          height: calc((80vw - 80px) / 16 * 9);
+          max-height: 500px;
           width: calc(80vw - 80px);
         }
       }
