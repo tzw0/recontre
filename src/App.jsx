@@ -9,11 +9,14 @@ import G0 from './assets/G0.pdf'
 import G1 from './assets/G1.pdf'
 import G2 from './assets/G2.pdf'
 import AffinityDiagram from './assets/AffinityDiagram.png'
-import G3_Evaluation from './assets/G2.pdf'
+// import G3_Evaluation from './assets/G2.pdf'
 import HistoryIcon from '@mui/icons-material/History';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import UpdateIcon from '@mui/icons-material/Update';
 import GavelIcon from '@mui/icons-material/Gavel';
+
+const G3_Evaluation = "https://docs.google.com/document/d/14yST7s2pwt4_eLWf13vi_0ugIHyvfST4X3Y6HfO6ZA8/edit#heading=h.v5el6xore5kj"
+
 
 function App() {
   return (
@@ -439,11 +442,14 @@ function App() {
             <div className="img-color">
               <div className="img flat"></div>
             </div>
+            Since our users may be using our application outdoors, on the go, we decided on a light theme so that our application will be more usable and less reflective under direct sunlight. We then selected our primary accent colour as a saturated purple to highlight action buttons and important information.
+            <br />
             <br />
             <h3>Font Selection</h3>
             <div className="img-font">
               <div className="img flat"></div>
             </div>
+            For fonts, we wanted our application name to look stylish and thus selected a cursive font for it. We decided on san serif fonts for our title and body text so it is more readable from a small mobile screen.
           </div>
         </div>
         <div className="clear"></div>
@@ -636,10 +642,15 @@ function App() {
         <div className="row w80 no-vert-center">
           <div className="col m40px w100">
             <h2>Interactive Prototype</h2>
-            Try out the application yourself with our interactive prototype!
-            <br />
+            <span>
+              Try out the application yourself with our <a href="https://www.figma.com/proto/nG4jr7Qwj7efqjRmqmlppX/Interactive-Prototype?node-id=809%3A7253&scaling=scale-down&page-id=809%3A7253&starting-point-node-id=924%3A15236" target="_blank" rel="noreferrer" className="true">Interactive Prototype! ↪</a>
+            </span>
             <br />
             <iframe title="Interactive prototype" className="interactive-prototype" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FnG4jr7Qwj7efqjRmqmlppX%2FG2%3Fnode-id%3D924%253A15236%26scaling%3Dscale-down%26page-id%3D809%253A7253%26starting-point-node-id%3D924%253A15236" allowfullscreen={true}></iframe>
+            <br />
+            <span>
+              For our old interactive prototype from G2 (before improvements), click here. <a href="https://www.figma.com/proto/nG4jr7Qwj7efqjRmqmlppX/Interactive-Prototype?node-id=343%3A4488&scaling=scale-down&page-id=343%3A4488&starting-point-node-id=404%3A5730&show-proto-sidebar=1" target="_blank" rel="noreferrer" className="true">G2 Interactive Prototype ↪</a>
+            </span>
           </div>
         </div>
         <div className="clear"></div>
@@ -654,8 +665,12 @@ function App() {
             <br />
             <br />
             <iframe title="final-presentation" className="final-presentation"
-              src="https://www.youtube.com/embed/htV_oL5jda0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              src="https://www.youtube.com/embed/NPdLeX5wmSk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
+            <br />
+            <span>
+              View our slides here. <a href="https://docs.google.com/presentation/d/1OS9w_tnASN4HvagVPyvre7WFywa1D3bF/edit?usp=sharing&ouid=100729052484979234219&rtpof=true&sd=true" target="_blank" rel="noreferrer" className="true">Final Presentation Slides ↪</a>
+            </span>
           </div>
         </div>
       </div>
@@ -670,11 +685,11 @@ function App() {
 
           <div>
             <h2>Documentation:</h2>
-            <a href={G0} target="_blank" rel="noreferrer">G0 Design Problem ↪</a>
-            <a href={G1} target="_blank" rel="noreferrer">G1 User Research ↪</a>
-            <a href={G2} target="_blank" rel="noreferrer">G2 Prototyping ↪</a>
-            <a href="https://docs.google.com/document/d/1u7SFSA3U0r9IwlFA-3yIBUL62k8-xIF799wWQ3PChks/" target="_blank" rel="noreferrer">G3 Abstract ↪</a>
-            <a href={G3_Evaluation} target="_blank" rel="noreferrer">G3 Evaluation ↪</a>
+            <a href={G0} target="_blank" rel="noreferrer">G0: Design Problem ↪</a>
+            <a href={G1} target="_blank" rel="noreferrer">G1: User Research ↪</a>
+            <a href={G2} target="_blank" rel="noreferrer">G2: Prototyping ↪</a>
+            <a href="https://docs.google.com/document/d/1u7SFSA3U0r9IwlFA-3yIBUL62k8-xIF799wWQ3PChks/" target="_blank" rel="noreferrer">G3: Abstract ↪</a>
+            <a href={G3_Evaluation} target="_blank" rel="noreferrer">G3: Evaluation ↪</a>
             <br />
           </div>
 
