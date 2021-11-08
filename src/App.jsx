@@ -8,6 +8,7 @@ import CreateIcon from '@mui/icons-material/Create';
 import G0 from './assets/G0.pdf'
 import G1 from './assets/G1.pdf'
 import G2 from './assets/G2.pdf'
+import AffinityDiagram from './assets/AffinityDiagram.png'
 import G3_Evaluation from './assets/G2.pdf'
 import HistoryIcon from '@mui/icons-material/History';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
@@ -182,9 +183,12 @@ function App() {
               <li>External factors when deciding</li>
             </ol>
 
-            <div className="img-affinity">
-              <div className="img"></div>
-            </div>
+            <a target="_blank" rel="noreferrer" href={AffinityDiagram}>
+              *Click to View and Magnify*
+              <div className="img-affinity">
+                <div className="img"></div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
