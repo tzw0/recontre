@@ -554,7 +554,7 @@ function App() {
         </div>
         <div className="clear"></div>
         <div className="row w80 no-vert-center">
-          <div className="col m40px w33">
+          <div className="col m40px w50">
             <p> <div className="icon"> <HistoryIcon fontSize="medium" /> &nbsp; Before </div>
             </p>
             <div className="img-i1b4">
@@ -563,16 +563,7 @@ function App() {
               </div>
             </div>
           </div>
-          {/* <div className="col m40px w33">
-            <p> <div className="icon"> <ListAltIcon fontSize="medium" /> &nbsp; Changes </div>
-              <ul>
-                <li>Removed unnecessary information such as the next day’s weather and crowd level. </li>
-                <li>Included contact information for food page</li>
-                <li>Changed the font size of headings </li>
-              </ul>
-            </p>
-          </div> */}
-          <div className="col m40px w67">
+          <div className="col m40px w50">
             <p> <div className="icon"> <UpdateIcon fontSize="medium" /> &nbsp; After (with Improvements) </div>
             </p>
             <div className="img-i1af">
@@ -607,7 +598,7 @@ function App() {
         </div>
         <div className="clear"></div>
         <div className="row w80 no-vert-center">
-          <div className="col m40px w33">
+          <div className="col m40px w50">
             <p> <div className="icon"> <HistoryIcon fontSize="medium" /> &nbsp; Before </div>
             </p>
             <div className="img-i3b4">
@@ -615,15 +606,8 @@ function App() {
               </div>
             </div>
           </div>
-          {/* <div className="col m40px w33">
-            <p> <div className="icon"> <ListAltIcon fontSize="medium" /> &nbsp; Changes </div>
-              <ul>
-                <li>Removed “Never” button.</li>
-                <li>Included a “Recommended by X friends” tailored for each user next to the “Match” feature</li>
-              </ul>
-            </p>
-          </div> */}
-          <div className="col m40px w67">
+
+          <div className="col m40px w50">
             <p> <div className="icon"> <UpdateIcon fontSize="medium" /> &nbsp; After (with Improvements) </div>
             </p>
             <div className="img-i3af">
