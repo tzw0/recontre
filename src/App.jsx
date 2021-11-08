@@ -8,10 +8,10 @@ import CreateIcon from '@mui/icons-material/Create';
 import G0 from './assets/G0.pdf'
 import G1 from './assets/G1.pdf'
 import G2 from './assets/G2.pdf'
+import G3_Evaluation from './assets/G2.pdf'
 import HistoryIcon from '@mui/icons-material/History';
-import ListAltIcon from '@mui/icons-material/ListAlt';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import UpdateIcon from '@mui/icons-material/Update';
 import GavelIcon from '@mui/icons-material/Gavel';
 
 function App() {
@@ -67,7 +67,6 @@ function App() {
               <div className="img flat"></div>
             </div>
             Chope is the largest dining technology platform across Asia and is integrated with many restaurants across Singapore.
-            <ul><li>Does not retain any voucher codes natively in the application</li><li>Its mobile application does not have search filter based on location or cuisine</li></ul>
           </div>
           <div className="col m40px w50">
             <h3>Klook</h3>
@@ -75,6 +74,17 @@ function App() {
               <div className="img flat"></div>
             </div>
             Klook is a platform offering tourism, lifestyle attractions and events to users.
+          </div>
+        </div>
+
+        <div className="clear"></div>
+        <div className="clear"></div>
+
+        <div className="row w80 no-vert-center">
+          <div className="col m40px w50">
+            <ul><li>Does not retain any voucher codes natively in the application</li><li>Its mobile application does not have search filter based on location or cuisine</li></ul>
+          </div>
+          <div className="col m40px w50">
             <ul><li>Does not contain free attractions and events in Singapore</li><li>
               Recommended attractions and events are isolated</li></ul>
           </div>
@@ -470,7 +480,7 @@ function App() {
             </div>
             <br />
 
-            The user can gather more information about each locations by clicking "find out more" from discover tab, or by clicking into any location from 'food' or 'attraction' tabs. Based on weather, transport option and other details, the user can decide his outing plan.
+            The user can gather more information about each locations by clicking "find out more" from discover tab, or by clicking into any location from 'food' or 'attraction' tabs. Based on weather, transport option and other details, the user can decide his/her outing plan.
           </div>
         </div>
 
@@ -478,13 +488,13 @@ function App() {
         <div className="clear"></div>
       </div>
 
-      <div className="page collapse" id="pg10-usability-testing">
+      <div className="page collapse" id="testing">
         <div className="row w80 no-vert-center">
           <div className="col m40px w100">
             <h2>Usability Testing</h2>
             <span>
               Our group performed usability testing with 3 participants that fit our user groups to further sharpen and improve our prototype. We referenced the <a className="true" href="https://www.userfocus.co.uk/articles/testplan.html" target="_blank" rel="noreferrer">
-                Usability Test Plan Toolkit</a> when designing the test. Read our full documentation here: <a className="true" href="https://docs.google.com/document/d/1u7SFSA3U0r9IwlFA-3yIBUL62k8-xIF799wWQ3PChks/" target="_blank" rel="noreferrer">Evaluation Report ↪</a>
+                Usability Test Plan Toolkit</a> when designing the test. Read our full documentation here: <a className="true" href={G3_Evaluation} target="_blank" rel="noreferrer">Evaluation Report ↪</a>
             </span>
           </div>
         </div>
@@ -505,7 +515,7 @@ function App() {
           <div className="col m40px w33">
             <h3>Test Task 3</h3>
             <p> <div className="icon"> <PanoramaOutlinedIcon fontSize="medium" /> &nbsp; Scenario </div>
-              Navigate to the discovery page of Recontre and browse through the discovery page. Check on why the attraction or food place is recommended to you. Based on this information, choose whether you would want to plan for your next outing based on this location, save this location or to remove it from the discovery page.
+              Navigate to the discover page of Recontre and browse through the discover page. Check on why the attraction or food place is recommended to you. Based on this information, choose whether you would want to plan for your next outing based on this location, save this location or to remove it from the discover page.
             </p>
           </div>
         </div>
@@ -524,7 +534,7 @@ function App() {
           </div>
           <div className="col m40px w33">
             <p> <div className="icon"> <HelpOutlineIcon fontSize="medium" /> &nbsp; About </div>
-              This scenario was designed for the participant to walk through our “Discover” page which is a critical task of Recontre. From this scenario, we aim to gain insights of the layout of the page as well as whether the information provided is sufficient for the participant. Also, we would want to see whether the “match percentage” feature of the Discover page provides the participant with enough relevant information.
+              This scenario was designed for the participant to walk through our Discover page which is a critical task of Recontre. From this scenario, we aim to gain insights of the layout of the page as well as whether the information provided is sufficient for the participant. Also, we would want to see whether the “match percentage” feature of the Discover page provides the participant with enough relevant information.
             </p>
           </div>
         </div>
@@ -549,7 +559,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="col m40px w33">
+          {/* <div className="col m40px w33">
             <p> <div className="icon"> <ListAltIcon fontSize="medium" /> &nbsp; Changes </div>
               <ul>
                 <li>Removed unnecessary information such as the next day’s weather and crowd level. </li>
@@ -557,9 +567,9 @@ function App() {
                 <li>Changed the font size of headings </li>
               </ul>
             </p>
-          </div>
-          <div className="col m40px w33">
-            <p> <div className="icon"> <ArrowForwardIcon fontSize="medium" /> &nbsp; After </div>
+          </div> */}
+          <div className="col m40px w67">
+            <p> <div className="icon"> <UpdateIcon fontSize="medium" /> &nbsp; After (with Improvements) </div>
             </p>
             <div className="img-i1af">
               <div className="img flat">
@@ -586,6 +596,8 @@ function App() {
             <h4> Improvement 2 </h4>
             <p> <div className="icon"> <WarningAmberIcon fontSize="medium" /> &nbsp; Problem </div>
               “Never” button on the Discover page is too extreme and users would stray away from using the button.
+              <br />
+              “Match” feature in the Discover page is a welcomed feature and it adds a personal touch to the application. However users felt that it will be better if some information on the reason for the match is also displayed on the discover page itself.
             </p>
           </div>
         </div>
@@ -594,22 +606,23 @@ function App() {
           <div className="col m40px w33">
             <p> <div className="icon"> <HistoryIcon fontSize="medium" /> &nbsp; Before </div>
             </p>
-            <div className="img-i2b4">
+            <div className="img-i3b4">
               <div className="img flat">
               </div>
             </div>
           </div>
-          <div className="col m40px w33">
+          {/* <div className="col m40px w33">
             <p> <div className="icon"> <ListAltIcon fontSize="medium" /> &nbsp; Changes </div>
               <ul>
                 <li>Removed “Never” button.</li>
+                <li>Included a “Recommended by X friends” tailored for each user next to the “Match” feature</li>
               </ul>
             </p>
-          </div>
-          <div className="col m40px w33">
-            <p> <div className="icon"> <ArrowForwardIcon fontSize="medium" /> &nbsp; After </div>
+          </div> */}
+          <div className="col m40px w67">
+            <p> <div className="icon"> <UpdateIcon fontSize="medium" /> &nbsp; After (with Improvements) </div>
             </p>
-            <div className="img-i2af">
+            <div className="img-i3af">
               <div className="img flat">
               </div>
             </div>
@@ -622,56 +635,7 @@ function App() {
           <div className="col m40px w100">
             <p> <div className="icon"> <GavelIcon fontSize="medium" /> &nbsp; Justification </div>
               Users will scroll past activities or food options that they are not interested in. Therefore, the “Never” button is not needed.
-            </p>
-          </div>
-        </div>
-        <div className="clear"></div>
-
-
-
-        <div className="row w80 no-vert-center">
-          <div className="col m40px w100">
-            <h4> Improvement 3 </h4>
-            <p> <div className="icon"> <WarningAmberIcon fontSize="medium" /> &nbsp; Problem </div>
-              “Match” feature in the Discover page is a welcomed feature and it adds a personal touch to the application.
-            </p>
-          </div>
-        </div>
-
-        <div className="clear"></div>
-        <div className="row w80 no-vert-center">
-          <div className="col m40px w33">
-            <p> <div className="icon"> <HistoryIcon fontSize="medium" /> &nbsp; Before </div>
-            </p>
-            <div className="img-i3b4">
-              <div className="img flat">
-
-              </div>
-            </div>
-          </div>
-          <div className="col m40px w33">
-            <p> <div className="icon"> <ListAltIcon fontSize="medium" /> &nbsp; Changes </div>
-              <ul>
-                <li>Included a “Recommended by X friends” tailored for each user next to the “Match” feature</li>
-              </ul>
-            </p>
-          </div>
-          <div className="col m40px w33">
-            <p> <div className="icon"> <ArrowForwardIcon fontSize="medium" /> &nbsp; After </div>
-            </p>
-            <div className="img-i3af">
-              <div className="img flat">
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div className="clear"></div>
-        <div className="row w80 no-vert-center">
-          <div className="col m40px w100">
-            <p> <div className="icon"> <GavelIcon fontSize="medium" /> &nbsp; Justification </div>
+              <br />
               This will give users more information about the current food or activity before clicking into the “Match” feature to look at their friend’s reviews.
             </p>
           </div>
@@ -698,6 +662,8 @@ function App() {
         <div className="row w80 no-vert-center">
           <div className="col m40px w100">
             <h2>Final Presentation</h2>
+            Watch our journey in creating Recontre!
+            <br />
             <br />
             <iframe title="final-presentation" className="final-presentation"
               src="https://www.youtube.com/embed/htV_oL5jda0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -719,7 +685,8 @@ function App() {
             <a href={G0} target="_blank" rel="noreferrer">G0 Design Problem ↪</a>
             <a href={G1} target="_blank" rel="noreferrer">G1 User Research ↪</a>
             <a href={G2} target="_blank" rel="noreferrer">G2 Prototyping ↪</a>
-            <a href="https://docs.google.com/document/d/1u7SFSA3U0r9IwlFA-3yIBUL62k8-xIF799wWQ3PChks/" target="_blank" rel="noreferrer">G3 Evaluation ↪</a>
+            <a href="https://docs.google.com/document/d/1u7SFSA3U0r9IwlFA-3yIBUL62k8-xIF799wWQ3PChks/" target="_blank" rel="noreferrer">G3 Abstract ↪</a>
+            <a href={G3_Evaluation} target="_blank" rel="noreferrer">G3 Evaluation ↪</a>
             <br />
           </div>
 

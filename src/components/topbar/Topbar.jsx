@@ -14,7 +14,7 @@ export default function Topbar() {
                     <div className="vert-sep"></div>
                     <a href="#presentation">Final Presentation</a>
                     <div className="vert-sep"></div>
-                    <a href="https://docs.google.com/document/d/14yST7s2pwt4_eLWf13vi_0ugIHyvfST4X3Y6HfO6ZA8/edit?usp=sharing" target="_blank" rel="noreferrer">Evaluation Report</a>
+                    <a href="#testing" >Usability Testing</a>
                 </div>
             </div>
         </div>
